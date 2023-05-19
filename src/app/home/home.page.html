@@ -1,22 +1,85 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Calendário
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
 
-  <div id="container">
-    <h3>Projeto com Bootstrap e Ionic!</h3>
-    <hr>
-    <p>Componentes Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"> - UI Components</a></p>
-    <p>Componentes Bootstrap <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/5.3/components/buttons/"> - UI Components</a></p>
-  </div>
+  <ion-row class="ion-justify-content-center">
+    <ion-col size="8">
+
+      <ion-row>
+        <ion-col size="12">
+          <img src="{{this.calendario.foto}}" alt="">
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col size="12">
+          <ion-label>{{ this.calendario.mes }} - {{this.calendario.ano}}</ion-label>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+      <ng-container *ngFor="let dia_semana of this.calendario.dias_da_semana">
+          <ion-col size="1">
+            <ion-label>{{ dia_semana }}</ion-label>
+          </ion-col>
+      </ng-container>
+    </ion-row>
+
+
+    <!--Primeira Semana-->
+  <ion-row>
+   <ng-container *ngFor="let dia of this.calendario.primeira_semana">
+      <ion-col size="1">
+        <ion-label>{{ dia }}</ion-label>
+      </ion-col>
+   </ng-container>
+  </ion-row>
+
+     <!--Segunda Semana-->
+     <ion-row>
+      <ng-container *ngFor="let dia of this.calendario.primeira_semana">
+         <ion-col size="1">
+           <ion-label>{{ dia }}</ion-label>
+         </ion-col>
+      </ng-container>
+     </ion-row>
+
+     <!--Terceira Semana-->
+     <ion-row>
+      <ng-container *ngFor="let dia of this.calendario.primeira_semana">
+         <ion-col size="1">
+           <ion-label>{{ dia }}</ion-label>
+         </ion-col>
+      </ng-container>
+     </ion-row>
+
+     <!--Quarta Semana-->
+     <ion-row>
+      <ng-container *ngFor="let dia of this.calendario.primeira_semana">
+         <ion-col size="1">
+           <ion-label>{{ dia }}</ion-label>
+         </ion-col>
+      </ng-container>
+     </ion-row>
+
+     <!--Quinta Semana-->
+     <ion-row>
+      <ng-container *ngFor="let dia of this.calendario.primeira_semana">
+         <ion-col size="1">
+           <ion-label>{{ dia }}</ion-label>
+         </ion-col>
+      </ng-container>
+     </ion-row>
+
+    </ion-col>
+  </ion-row>
+    
+  
 </ion-content>
+
