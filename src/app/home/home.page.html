@@ -1,22 +1,95 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-grid>
+    <ion-row>
+        <ion-col size="3">
+          <ion-button onclick="exibir(7)" color="danger">%</ion-button>
+        </ion-col>
 
-  <div id="container">
-    <h3>Projeto com Bootstrap e Ionic!</h3>
-    <hr>
-    <p>Componentes Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components"> - UI Components</a></p>
-    <p>Componentes Bootstrap <a target="_blank" rel="noopener noreferrer" href="https://getbootstrap.com/docs/5.3/components/buttons/"> - UI Components</a></p>
-  </div>
+        <ion-col size="3">
+          <ion-button onclick="exibir(8)" color="danger">,</ion-button>
+        </ion-col>
+
+       <ion-col size="3">
+          <ion-button onclick="exibir(9)" color="danger">Apagar</ion-button>
+        </ion-col>
+
+        <ion-col size="3">
+          <ion-button onclick="exibir(8)" color="danger">/</ion-button>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  <ion-grid>
+    <ion-row>
+        <ion-col size="3">
+          <ion-button onclick="exibir(7)" color="medium">7</ion-button>
+        </ion-col>
+
+        <ion-col size="3">
+          <ion-button onclick="exibir(8)" color="medium">8</ion-button>
+        </ion-col>
+
+       <ion-col size="3">
+          <ion-button onclick="exibir(9)" color="medium">9</ion-button>
+        </ion-col>
+
+        <ion-col size="3">
+          <ion-button onclick="exibir(8)" color="danger">*</ion-button>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+      
+  <ion-grid>
+    <ion-row>
+        <ion-col size="3">
+          <ion-button onclick="exibir(7)" color="medium">4</ion-button>
+        </ion-col>
+
+        <ion-col size="3">
+          <ion-button onclick="exibir(8)" color="medium">5</ion-button>
+        </ion-col>
+
+       <ion-col size="3">
+          <ion-button onclick="exibir(9)" color="medium">6</ion-button>
+        </ion-col>
+
+        <ion-col size="3">
+          <ion-button onclick="exibir(8)" color="danger">-</ion-button>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+        <ion-col size="3">
+          <ion-button onclick="exibir(7)" color="medium">1</ion-button>
+        </ion-col>
+
+        <ion-col size="3">
+          <ion-button onclick="exibir(8)" color="medium">2</ion-button>
+        </ion-col>
+
+       <ion-col size="3">
+          <ion-button onclick="exibir(9)" color="medium">3</ion-button>
+        </ion-col>
+
+        <ion-col size="3">
+          <ion-button onclick="exibir(8)" color="danger">+</ion-button>
+        </ion-col>
+    </ion-row>
+  </ion-grid>
+  
+  <ion-grid>
+    <ion-row>
+        <ion-col size="6">
+          <ion-button onclick="exibir(7)" color="medium">0</ion-button>
+        </ion-col>
+
+        <ion-col size="6">
+          <ion-button onclick="exibir(8)" color="danger">=</ion-button>
+        </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
 </ion-content>
